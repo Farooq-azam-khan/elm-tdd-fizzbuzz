@@ -19,4 +19,10 @@ suite =
         \_ -> Expect.equal (fizzbuzz 4) "1\n2\nFizz\n4"
     , test "fizzbuzz 5" <| 
         \_ -> Expect.equal (fizzbuzz 5) "1\n2\nFizz\n4\nBuzz"
+    , test "fizzbuzz 15" <|
+        \_ -> Expect.equal (fizzbuzz 15) all_possible_scenarios
     ]
+
+all_possible_scenarios : String 
+all_possible_scenarios = 
+    "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz"

@@ -15,4 +15,8 @@ suite =
         \_ -> Expect.equal (fizzbuzz 2) "1\n2"
     , test "fizzbuzz 3" <|
         \_ -> Expect.equal (fizzbuzz 3) "1\n2\nFizz"
+    , test "fizzbuzz 4" <|
+        \_ -> Expect.equal (fizzbuzz 4) "1\n2\nFizz\n4"
+    , test "fizzbuzz 5" <| 
+        \_ -> Expect.equal (fizzbuzz 5) "1\n2\nFizz\n4\nBuzz"
     ]
